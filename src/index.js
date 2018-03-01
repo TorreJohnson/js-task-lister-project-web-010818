@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // x.style.display = "none";
 
   let list = new List();
+  list.updateCurrentLists();
+  list.createNewListEventListener();
+
   let task = new Task();
-  list.createList();
-  list.getAllList();
+  task.displayAllTasks()
   task.creatingTask();
 });
